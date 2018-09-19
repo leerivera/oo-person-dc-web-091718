@@ -23,9 +23,21 @@ class Person
     end
   end
 
+
   def clean?
     @hygiene > 7
   end 
+
+  
+
+
+  def clean?
+    @hygiene > 7
+      
+    
+  end
+  
+
 
   def happiness=(points)
     @happiness = points
@@ -36,6 +48,7 @@ class Person
       @happiness = 0
     end
   end
+
 
   def happy?
     @happiness > 7
@@ -49,6 +62,7 @@ class Person
   end
   
   def take_bath
+
     self.hygiene += 4
     return "♪ Rub-a-dub just relaxing in the tub ♫"
   end
